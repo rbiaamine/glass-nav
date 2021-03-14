@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins',sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    
+    
+}
+header{
+    width: 80%;
+    margin: 2rem 5rem;
+    
+    
+    background-color: rgba(255,255,255,0.4);    
+    position: relative;
+    border-radius: 3rem;
+    padding: 10px ;
+    padding:1rem ;
+    
+    box-sizing: border-box;
+    
+    
+    
+}
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    float: left;
+    color: #069370;
+    
+    
+    text-decoration: none;
+}
+nav {
+    float: right;
+}
+.clear-fix {
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    margin:10px 0;
+    padding:10px 20px;
+    text-decoration: none;
+}
+nav ul li a.activ,
+nav ul li a:hover {
+    background-color: #00f260;
+    color: #fff;
+    transition:0.5s;
+}
+@media (max-width: 1200px)
+{
+    header{
+        margin:3rem;
+    }
+}
+@media (max-width:768px)
+{
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height:40px;
+        margin:10px;
+        
+        float:right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #069370;
+    }
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontawesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active::before{
+        content:'\f00d  ';
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+    }
+    nav.active ul{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+    nav.active ul a{
+        
+        margin: 0;
+        
+        padding: 1rem 3rem;
+    }
+    nav.active ul a.first{
+        border-radius: 2rem 2rem  0 0;
+
+    }
+    nav.active ul a.last{
+        border-radius: 0 0 2rem 2rem;
+
+    }
+}
+
+    
+    
+    

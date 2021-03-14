@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-    <h1>Amine Web Site</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquid earum qui delectus eveniet sunt nesciunt omnis atque at non, magnam ullam assumenda, nulla in culpa nihil rem adipisci excepturi obcaecati, quo quam eos laboriosam! Assumenda ab sequi incidunt rerum deleniti vero ad delectus similique doloribus sit ducimus quo eum nobis, mollitia nam? Corporis necessitatibus repellat architecto ipsa cupiditate ipsum.</p>
+   <main class="bg">
+       <header>
+           <a class="logo" href="#">Amine Brand</a>
+           <div class="menu-toggle"></div>
+           <nav>
+               <ul>
+                   <li><a class="active first" href="#">Home</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a class="last" href="#">About</a></li>
+
+               </ul>
+           </nav>
+           <div class="clear-fix"></div>
+       </header>
+       <section class="glass"></section>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script>$(document).ready(function(){
+       $('.menu-toggle').click(function(){
+           $('.menu-toggle').toggleClass('active')
+           $('nav').toggleClass('active')
+           
+       })
+   })
+       </script>
 </body>
 </html>
